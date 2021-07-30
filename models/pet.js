@@ -1,24 +1,25 @@
-const mongoose = require('mongoose');
+var mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
+const { Schema } = mongoose;
 
-const PetSchema = new Schema(
-    {
-        name: {type: String, required: true, maxLength: 10},
-        species: {type: String, required: true, maxLength:10},
-        breed: {type: String, required: true, maxLength: 10},
-        dob: {type: Date}
-        weight: {type: String},
-        vet: {type: Schema.Types.ObjectId, ref: 'Vet'},
-    }
-);
+var PetSchema = new Schema({
+    name: { type: String, required: true},
+    species: { type: String, required: true},
+    age: { type: String},
+    weight: { type: String},
+    vet: {type: Schema.Types.ObjectId, ref: 'Vet'},
+    insurance: {type: Schema.Types.ObjectId, ref: 'Insurance'}
+});
 
-//Virtual for pet URL
+// Virtual for user URL
+
 PetSchema
     .virtual('url')
-    .get( () => {
-            return '/users/pet/' + this._id;
+    .get( function () {
+        return '/user/pet' + this._id;
     });
 
-//Export Model
+//Export
 module.exports = mongoose.model('Pet', PetSchema)
+
+

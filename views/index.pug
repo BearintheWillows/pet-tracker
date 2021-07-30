@@ -2,4 +2,13 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  form(action='', method='POST')
+    p
+      | email:
+      input(type='text', name='email')
+      | password:
+      input(type='password', name='password')
+    input(type='submit', value='Submit')
+  |
+  - var urlRegister = 'localhost:3000/register';
+  a(class='button', value='Register', href=`/` + urlRegister)

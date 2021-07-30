@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    h1= title
+
+    ul
+        - petList.sort( (a, b) => {let textA = a.name.toUpperCase(); let textB = b.name.toUpperCase(); return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;});
+            each pet in petList
+                    li
+                        a(href=pet.url) #{pet.name}
+                        | (#{pet.species}
+
+            else
+                li No Pets
+    input(type=button value='Create Pet')
