@@ -1,14 +1,16 @@
 extends layout
 
 block content
-  h1= title
-  form(action='', method='POST')
-    p
-      | email:
-      input(type='text', name='email')
-      | password:
-      input(type='password', name='password')
-    input(type='submit', value='Submit')
-  |
-  - var urlRegister = 'localhost:3000/register';
-  a(class='button', value='Register', href=`/` + urlRegister)
+  h1= 'Pet-tracker'
+  img(src="/stylesheets/images/dog.jpg", alt="", style="width:500px;height:500px;", id="indexPic")
+  h2= 'Welcome!'
+  form(action='', method='POST', class="form", id="loginForm")
+    .label EMAIL
+    input(type='text', name='email', class="inputs")
+    .label PASSWORD
+    input(type='password', name='password', class="inputs")
+    |
+    .buttons  
+      input(type='submit', value='Login', id="submit")
+      input(type="button" , value="Register", id="register")
+

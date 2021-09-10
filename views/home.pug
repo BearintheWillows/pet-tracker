@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .nav
+    h1= 'Willows Family' 
+  .petBox
+    .petDiv
+        img(src="/stylesheets/images/dog.jpg", alt="", class="pet")
+        p Evigt
+    .petDiv
+        img(src="/stylesheets/images/dog.jpg", alt="", class="pet")
+        p Gizmo
+    .petDiv
+        img(src="/stylesheets/images/dog.jpg", alt="", class="pet")
+        p Lexi 
+    .petDiv
+        img(src="/stylesheets/images/dog.jpg", alt="", class="pet")
+        p Tigger
+  .addPet
+    input(type="button" , value="Add Pet", id="addPet")
