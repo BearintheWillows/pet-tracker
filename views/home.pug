@@ -1,20 +1,25 @@
 extends layout
 
-block content
-  .nav
-    h1= 'Willows Family' 
-  .petBox
-    .petDiv
-        img(src="/stylesheets/images/dog.jpg", alt="", class="pet")
-        p Evigt
-    .petDiv
-        img(src="/stylesheets/images/dog.jpg", alt="", class="pet")
-        p Gizmo
-    .petDiv
-        img(src="/stylesheets/images/dog.jpg", alt="", class="pet")
-        p Lexi 
-    .petDiv
-        img(src="/stylesheets/images/dog.jpg", alt="", class="pet")
-        p Tigger
-  .addPet
-    input(type="button" , value="Add Pet", id="addPet")
+block navBar 
+    .topnav
+        .heading
+            p Willows Family
+        img(src="https://cdn0.iconfinder.com/data/icons/essentials-line/100/Menu-512.png", alt="", id="hamburger")
+
+block content 
+    .mainBody
+        .petBox
+            .petDiv
+                img(src="/stylesheets/images/dog.jpg", alt="", class="pet")
+                p Evigt
+            .petDiv
+                img(src="/stylesheets/images/dog.jpg", alt="", class="pet")
+                p Gizmo
+            .petDiv
+                img(src="/stylesheets/images/dog.jpg", alt="", class="pet")
+                p Lexi 
+            .petDiv
+                img(src="/stylesheets/images/dog.jpg", alt="", class="pet")
+                p Tigger
+        .addPet
+            input(type="button" , value="Add Pet", id="addPet")

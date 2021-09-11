@@ -1,0 +1,31 @@
+extends layout  
+
+block navBar
+    .topnav
+        .heading
+            p Pet Details
+        img(src="https://cdn0.iconfinder.com/data/icons/essentials-line/100/Menu-512.png", alt="", id="hamburger")
+
+block content
+    .detailsPage
+        .insuranceDetails
+            .detailsHeading
+                h2 Insurer Details
+            p Insurer Name: Petlyf
+            p Insurer website: Petlyf.com 
+            p Insurer Number: 000 000
+        .vetDetails 
+            .detailsHeading
+                h2 Vet Details
+            p Vet Name: Sally Woods
+            p Practise Name: Oakwood Vets
+            p Vet website: oakwoodvets.com 
+            p Telephone Number: 01604823848
+        .microchipDetails
+            .detailsHeading
+                h2 Microchip Details
+            p Registered with: Petlog 
+            p Microchip Number: 000 000 0
+            p Website: Petlog.com
+        input(type="button", value="Edit Details" id="editDetailsBtn")
+

@@ -1,8 +1,43 @@
+html {
+  height: 100%;
+}
+
 body {
-  padding: 50px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: rgb(200, 255, 0);
+  display: flexbox;
+  flex-direction: column;
+  min-height: 100%;
+
 }
+
+.topnav {
+  height: 100px;
+  display: flex;
+  background-color: teal;
+}
+
+.topnav img {
+  height: 100%;
+}
+
+.heading {
+  width: 90%;
+  font-size: 60px;
+}
+
+.heading p {
+  margin: 0%;
+  margin-top: 15px;
+  margin-left: 200px;
+}
+
+.mainBody {
+  padding: 50px;
+  padding-top: 0;
+}
+
 
 h1 {
   display: flex;
@@ -71,7 +106,7 @@ input#register{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 100px;
 
 
 }
@@ -88,6 +123,7 @@ input#register{
   width: 90%;
   height: 400px;
   margin: 5%;
+  border-radius: 50%;
 }
 
 .addPet {
@@ -103,3 +139,190 @@ input#register{
   font-size: 25px;
 }
 
+.pictureUpload {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.pictureUpload #upload {
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  color: white;
+  background-color: blueviolet;
+  border-radius: 10%;
+  margin-left: 15%;
+  margin-right: 25%;
+}
+
+.title h1 {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.createPetForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#createPetSubmit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 55%;
+  margin-top: 50px;;
+
+}
+
+
+input#create {
+  width: 50%;
+  margin: 5px;
+  height: 75px;
+  border-radius: 50px;
+  font-size: 25px;
+}
+
+.inputCreate {
+  padding: 2%;
+  width: 70%;
+  margin: 5px;
+}
+
+.petHomeBody {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.petHomeTop {
+  min-width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+}
+
+.petHomeImg {
+  padding: 0%;
+  width: 50%;
+}
+
+
+.petHomeTopInfo {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-left: 100px;
+  margin-right: 100px;
+  min-height: 100%;
+}
+
+.detailInfo {
+  font-size: 30px;
+  height: 20%;
+  margin-top: 5%;
+  padding-right: 30px;
+  padding-left: 50px;
+}
+
+#bottomDetail {
+  margin-bottom: 50px;
+}
+
+#topDetail {
+  padding-left: 100px;
+}
+
+#petDetails {
+  height: 100px;
+  width: 100%;
+  font-size: 30px;
+}
+
+.petHomeMid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.petHomeMid #chooseTrackable {
+  height: 50px;
+  font-size: 40px;
+  width: 95%;
+  margin-top: 20px;
+
+}
+
+p.data {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+p.graphs {
+  padding: 10px;
+  border: 2px;
+  border-style: solid;
+  width: 100%;
+  height: 400px;
+  
+}
+
+.detailsPage {
+  padding: 50px;
+}
+
+.insuranceDetails p {
+  font-size: 40px;
+}
+
+.vetDetails p {
+  font-size: 40px;
+}
+
+.microchipDetails p {
+  font-size: 40px;
+}
+
+#editDetailsBtn {
+  width: 250px;
+  height: 75px;
+  font-size: 40px;
+  margin-left: 30%;
+}
+
+#addTrackableBtn {
+  height: 100px;
+  width: 30%;
+  font-size: 30px;
+  border-radius: 10%;
+}
+
+.trackableBody {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.trackableBody h2{
+  padding-left: 150px;
+}
+
+.trackableBody input {
+  padding: 20px;
+  margin: 20px;
+  font-size: 40px;
+}
+
+.trackableBox {
+  height: 500px;
+}
+
+#trackableSubmit {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+#trackableSubmit input {
+  margin: 10px;
+}

@@ -1,0 +1,29 @@
+extends layout
+
+block navBar 
+    .topnav
+        .heading
+            p Create Pet
+        img(src="https://cdn0.iconfinder.com/data/icons/essentials-line/100/Menu-512.png", alt="", id="hamburger")
+
+
+block content 
+    .pictureUpload
+        img(src="/stylesheets/images/dog.jpg", alt="", class="pet")
+        input(type="button" , value="upload", id="upload")
+    .createPetForm     
+        form(action='', method='POST', class="form", id="createPetForm")
+        .label Name 
+        input(type='text', name='email', class="inputCreate")
+        .label Date of Birth 
+        input(type='number', name='DOB', class="inputCreate")
+        .label Species
+        input(type="text", name='species', class="inputCreate")
+        .label Breed 
+        input(type="text", name="breed", class="inputCreate")
+        .label Choose Trackable
+        input(type="text", name='trackable', class="inputCreate")
+        |
+        .buttons#createPetSubmit
+            input(type='submit', value='Create Pet', id="create")
+            input(type="button" , value="Cancel", id="create")

@@ -1,0 +1,17 @@
+extends layout 
+
+block navBar 
+    .topnav
+        .heading
+            p Add / Edit Trackable
+        img(src="https://cdn0.iconfinder.com/data/icons/essentials-line/100/Menu-512.png", alt="", id="hamburger")
+  
+block content
+    .trackableBody 
+        h2 Choose trackable and enter new/additonal info
+        input(type="text", value="Choose Pet" class="trackableInput")
+        input(type="text", Value="Choose Trackable" class="trackableInput")
+        input(type="textbox" class="trackableBox")
+    .buttons#trackableSubmit
+        input(type='submit', value='Create Pet', id="create")
+        input(type="button" , value="Cancel", id="create")
